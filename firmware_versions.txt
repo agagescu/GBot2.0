@@ -1,0 +1,32 @@
+2.8
+
+#define CUSTOM_MACHINE_NAME "GBOT v0.2.8"
+adjust probe position
+invert extruder direction
+enabled babystepping
+#define INVERT_E0_DIR true
+
+2.9
+
+#define CUSTOM_MACHINE_NAME "GBOT v0.2.9"
+#define LCD_BED_LEVELING
+#define BABYSTEP_MULTIPLICATOR  100 // default = 1
+#define AUTO_BED_LEVELING_LINEAR
+
+2.10
+
+#define CUSTOM_MACHINE_NAME "GBOT v0.2.10"
+#define BABYSTEP_MULTIPLICATOR  10
+#define BABYSTEP_ALWAYS_AVAILABLE
+
+2.11
+
+#define CUSTOM_MACHINE_NAME "GBOT v0.2.11"
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 112 } // adjust E steps/mm
+#define BABYSTEP_MULTIPLICATOR  5
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.4   // Z offset: -below +above  [the nozzle]
+
+2.12
+
+#define CUSTOM_MACHINE_NAME "GBOT v0.2.12"
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.2   // Z offset: -below +above  [the nozzle]

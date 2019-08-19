@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "Marlin-bugfix-2.0.x",
+			"path": "Marlin-bugfix-2.0.x"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.linux": {
+			"PATH": "/home/alex/.platformio/penv/bin:/home/alex/.platformio/penv:/home/alex/.local/bin:/home/alex/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}

@@ -1,0 +1,49 @@
+
+API KEY
+	//DBOT API KEY:				B71FF04BAEBB476B9D57B2D690830466
+
+G1 X120 E15 F600 ; prime nozzle
+G1 X275 F5000 ; quick wipe
+G92 E0;
+
+
+//STARTING GCODE TO TEST - NOZZLE PURGE
+G1 Z0.2 F1200 ; raise nozzle 0.2mm
+G92 E0 ; reset extrusion distance
+G1 Y10 ; move Y-Axis (bed) 10mm to prep for purge
+G1 X100 E12 F600 ; move X-carriage 100mm while purging 12mm of filament
+G92 E0 ; reset extrusion distance
+
+Recv: echo:  M200 D0
+Recv: echo:Steps per unit:
+Recv: echo: M92 X80.00 Y80.00 Z400.00 E100.00
+
+Extruder Calibration
+	Send: M92 E112
+
+
+Linear Bed Leveling
+	Send: M155 S30
+	Recv: ok
+	Send: M420 V
+	Recv: Bed Level Correction Matrix:
+	Recv: +0.999997 +0.000000 -0.002443
+	Recv: +0.000001 +1.000000 +0.000430
+	Recv: +0.002443 -0.000430 +0.999997
+	Recv: echo:Bed Leveling ON
+	Recv: ok
+	Send: M155 S3
+
+	Send: M155 S30
+	Recv: ok
+	Send: M420 V
+	Recv: Bed Level Correction Matrix:
+	Recv: +0.999997 +0.000000 -0.002458
+	Recv: +0.000001 +1.000000 +0.000498
+	Recv: +0.002458 -0.000498 +0.999997
+	Recv: echo:Bed Leveling ON
+	Recv: ok
+	Send: M155 S3
+	Recv: ok
+
+aws s3 sync /mnt/disk2/Shared/Photos/ s3://xx-ag-testing/
