@@ -1,0 +1,22 @@
+Immediate
+    bed PID autotune | M303 C10 S205 U1
+    SKR board case cover
+    camera mount
+    heated bed
+    lcd case
+    LEDs
+    clean up wiring
+    metal wheel spacers???
+
+
+Long Term
+    TMC drivers
+    direct extruder
+    filament runour sensor
+    linear rails
+    single stepper z axis
+    different build plate?
+
+Plugins
+    Octoprint BLTouch
+    

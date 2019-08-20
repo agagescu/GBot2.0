@@ -30,3 +30,14 @@ enabled babystepping
 
 #define CUSTOM_MACHINE_NAME "GBOT v0.2.12"
 #define Z_PROBE_OFFSET_FROM_EXTRUDER -2.2   // Z offset: -below +above  [the nozzle]
+#define MIN_PROBE_EDGE 15
+#define Z_SAFE_HOMING
+
+2.13
+
+#define CUSTOM_MACHINE_NAME "GBOT v0.2.13"
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.9   // Z offset: -below +above  [the nozzle]
+#define SDSUPPORT
+#define REVERSE_ENCODER_DIRECTION
+#define SPEAKER
+

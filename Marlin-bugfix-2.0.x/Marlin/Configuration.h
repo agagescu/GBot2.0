@@ -135,7 +135,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "GBOT v0.2.12"
+#define CUSTOM_MACHINE_NAME "GBOT v0.2.13"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -475,9 +475,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // DBot (Auto PID tune settings with fan @ 100%)  
-    #define DEFAULT_Kp 47.19
-    #define DEFAULT_Ki 5.05
-    #define DEFAULT_Kd 110.17
+    #define DEFAULT_Kp 36.36
+    #define DEFAULT_Ki 3.41
+    #define DEFAULT_Kd 96.83
 
   // Ultimaker
   // #define DEFAULT_Kp 22.2
@@ -913,7 +913,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -33  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.2   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.9   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 15
@@ -1629,7 +1629,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-//#define SDSUPPORT
+#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
